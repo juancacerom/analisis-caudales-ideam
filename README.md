@@ -31,7 +31,7 @@ Aplicar a datos hidrológicos reales un flujo de trabajo reproducible que antes 
 
 ### Comparación de estaciones
 
-Tabla completa: [resultados/comparacion_estaciones.csv](resultados/comparacion_estaciones.csv)
+Tabla completa: [resultados/comparacion_estaciones.csv](Resultados/comparacion_estaciones.csv)
 
 ### Mejor estación por departamento
 
