@@ -10,12 +10,12 @@ Aplicar a datos hidrológicos reales un flujo de trabajo reproducible que antes 
 
 - **Fuente:** IDEAM, portal de consulta y descarga de datos hidrometeorológicos (DHIME).
 - **Variable:** caudal medio diario (m³/s).
--- **Estaciones (14):**
+- **Estaciones (14):**
   - Tolima: Anchique, Angostura, Bocatoma [21217250] y Bocatoma [23017020]
   - Cundinamarca: Arrancaplumas, El Profundo, Puerto Salgar y Tobia
   - Magdalena: Canal Florida, El Banco, Ganadería Caribe, Guachaca, Hacienda Puerto Rico y Puente Ferrocarril
-  - **Periodo:** los archivos cubren desde 1998; el fin del registro varía según la estación (hasta 2026 como máximo). Las tres estaciones elegidas cubren: Arrancaplumas 1998-2014, Bocatoma [21217250] 1998-2018 y El Banco 1998-2026.
-
+- **Periodo:** los archivos cubren desde 1998; el fin del registro varía según la estación (hasta 2026 como máximo). Las tres estaciones elegidas cubren: Arrancaplumas 1998-2014, Bocatoma [21217250] 1998-2018 y El Banco 1998-2026.
+- **Nivel de aprobación:** *Preliminar*, es decir, aún no validado por el IDEAM.
 
 ## Metodología
 
@@ -30,6 +30,26 @@ Aplicar a datos hidrológicos reales un flujo de trabajo reproducible que antes 
 ## Resultados
 
 ### Comparación de estaciones
+Se compararon las 14 estaciones con los mismos criterios. La columna `apta` indica si cumple el criterio de calidad descrito en la metodología.
+
+estación                      | departamento   | inicio     | fin        |   faltantes_despues_% |   años_confiables |   hueco_mas_largo_dias | apta   |
+|:------------------------------|:---------------|:-----------|:-----------|----------------------:|------------------:|-----------------------:|:-------|
+| ARRANCAPLUMAS 21237020        | Cundinamarca   | 1998-01-01 | 2014-12-31 |                   0.8 |                16 |                     29 | Sí     |
+| PUERTO SALGAR 23037010        | Cundinamarca   | 1998-01-01 | 2026-01-01 |                   0.9 |                27 |                     52 | Sí     |
+| TOBIA 23067060                | Cundinamarca   | 1998-01-01 | 2026-01-01 |                   2.0 |                24 |                     44 | Sí     |
+| EL PROFUNDO 21197010          | Cundinamarca   | 1998-01-01 | 2026-01-01 |                   6.6 |                19 |                    362 | Sí     |
+| EL BANCO 25027020             | Magdalena      | 1998-01-01 | 2026-01-01 |                   3.7 |                27 |                    365 | Sí     |
+| PUENTE FERROCARRIL 29067130   | Magdalena      | 1998-01-01 | 2025-12-06 |                  10.9 |                20 |                    365 | No     |
+| GANADERIA CARIBE 29067150     | Magdalena      | 1998-01-01 | 2026-01-01 |                  11.0 |                15 |                    159 | No     |
+| CANAL FLORIDA 29067050        | Magdalena      | 1998-01-01 | 2026-01-01 |                  21.5 |                16 |                    365 | No     |
+| GUACHACA 15017040             | Magdalena      | 1998-01-01 | 2026-01-01 |                  34.1 |                16 |                   1096 | No     |
+| HACIENDA PUERTO RICO 29067060 | Magdalena      | 1998-01-01 | 2026-01-01 |                  81.4 |                 3 |                   7748 | No     |
+| BOCATOMA 21217250             | Tolima         | 1998-01-01 | 2018-01-01 |                   3.0 |                16 |                     88 | Sí     |
+| ANGOSTURA 21137050            | Tolima         | 2000-01-01 | 2020-01-01 |                   3.7 |                16 |                     89 | Sí     |
+| BOCATOMA 23017020             | Tolima         | 2000-01-01 | 2020-01-01 |                   6.1 |                15 |                    309 | Sí     |
+| ANCHIQUE 21137040             | Tolima         | 2000-01-01 | 2020-01-01 |                  29.2 |                13 |                   2033 | No     
+
+Tabla completa: [Resultados/comparacion_estaciones.csv](Resultados/comparacion_estaciones.csv)
 
 Tabla completa: [Resultados/comparacion_estaciones.csv](Resultados/comparacion_estaciones.csv)
 
@@ -75,6 +95,8 @@ Los gráficos muestran caudales, no precipitación, por lo que su relación con 
 
 - Los máximos de 2010 y 2011 difieren en apenas 1 m³/s, de modo que su periodo de retorno (14 frente a 28 años) depende solo del orden del ranking. Es una referencia empírica, no un valor de diseño.
 - Los valores antiguos de la serie son enteros y algunos recientes tienen decimales (por ejemplo, 2022). Podría deberse a un cambio en la forma de registro del dato; es una observación sin verificar.
+- - El umbral de años confiables se relajó a [16] para poder elegir una estación apta en Cundinamarca y en Tolima, cuyos registros son más cortos.
+- El periodo común de la comparación lo limita Arrancaplumas, cuyo registro termina en 2014.
 
 ## Limitaciones
 
