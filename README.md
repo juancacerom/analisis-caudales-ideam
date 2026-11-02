@@ -51,7 +51,6 @@ estación                      | departamento   | inicio     | fin        |   fa
 
 Tabla completa: [Resultados/comparacion_estaciones.csv](Resultados/comparacion_estaciones.csv)
 
-Tabla completa: [Resultados/comparacion_estaciones.csv](Resultados/comparacion_estaciones.csv)
 
 ### Mejor estación por departamento
 
