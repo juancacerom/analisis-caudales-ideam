@@ -43,7 +43,7 @@ Tabla completa: [Resultados/comparacion_estaciones.csv](Resultados/comparacion_e
 
 En cada departamento se eligió la estación apta con menos datos faltantes, según el criterio de la metodología. El Banco tiene más años confiables que las otras dos, pero también el hueco más largo (365 días, un año completo sin datos).
 
-![Comparación mensual de las mejores estaciones](resultados/comparacion_mejores_mensual.png)
+![Comparación mensual de las mejores estaciones](Resultados/comparacion_mejores_mensual.png)
 
 ![Ciclo anual normalizado](Resultados/comparacion_mejores_ciclo_normalizado.png)
 
