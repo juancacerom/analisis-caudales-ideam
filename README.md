@@ -45,7 +45,7 @@ En cada departamento se eligió la estación apta con menos datos faltantes, seg
 
 ![Comparación mensual de las mejores estaciones](resultados/comparacion_mejores_mensual.png)
 
-![Ciclo anual normalizado](resultados/comparacion_mejores_ciclo_normalizado.png)
+![Ciclo anual normalizado](Resultados/comparacion_mejores_ciclo_normalizado.png)
 
 En el ciclo anual normalizado (caudal mensual dividido por el caudal medio de cada estación), las tres estaciones elegidas (Arrancaplumas, en Cundinamarca; El Banco, en Magdalena; y Bocatoma, en Tolima) muestran un régimen bimodal, con dos temporadas de caudales altos y dos de caudales bajos. Las tres superan su media en mayo, junio, noviembre y diciembre, y quedan por debajo de ella entre enero y marzo y entre julio y septiembre.
 
@@ -57,11 +57,11 @@ Los gráficos muestran caudales, no precipitación, por lo que su relación con 
 
 **Ciclo anual.** El régimen es bimodal: el caudal medio mensual tiene dos temporadas altas, de mayo a junio (cerca de 4.800 a 4.900 m³/s) y de octubre a diciembre, con el máximo en noviembre (cerca de 5.400 m³/s). Los meses más bajos son de enero a marzo, con el mínimo en febrero (cerca de 2.500 m³/s), y hay una baja secundaria en agosto y septiembre (cerca de 3.500 a 3.700 m³/s).
 
-![Ciclo anual de El Banco](resultados/ciclo_anual_el_banco.png)
+![Ciclo anual de El Banco](Resultados/ciclo_anual_el_banco.png)
 
 **Máximos anuales.** El máximo del registro ocurrió el 6 de mayo de 2011, con 7.861 m³/s, y es consistente con el periodo lluvioso de 2010-2011 en Colombia. Se excluyeron dos años por tener menos de 90 % de datos: 2021, que no tiene datos, y 2026, que solo tiene el 1 de enero (barra gris en la figura).
 
-![Máximos anuales de El Banco](resultados/maximos_anuales_el_banco.png)
+![Máximos anuales de El Banco](Resultados/maximos_anuales_el_banco.png)
 
 | Año | Máximo diario (m³/s) | Completitud | T empírico (años) |
 |----:|---------------------:|------------:|------------------:|
