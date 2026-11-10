@@ -21,7 +21,7 @@ Aplicar a datos hidrológicos reales un flujo de trabajo reproducible que antes 
 
 1. **Carga y estructura.** Lectura de los CSV por departamento (subcarpeta), conversión de fechas, eliminación de fechas duplicadas y reindexación a un registro por día para hacer visibles los vacíos.
 2. **Limpieza.** Interpolación temporal solo en huecos de 5 días o menos. Los huecos más largos no se rellenan.
-3. **Criterio de calidad.** Un año es confiable si tiene al menos 90 % de sus días con dato. Una estación es apta si tiene menos de 15 % de faltantes tras la limpieza y al menos 20 años confiables.
+3. **Criterio de calidad.** Un año es confiable si tiene al menos 90 % de sus días con dato. Una estación es apta si tiene menos de 15 % de faltantes tras la limpieza.
 4. **Selección.** Dentro de cada departamento se elige la estación apta con menos faltantes, luego más años confiables y luego el hueco más corto.
 5. **Comparación.** Las mejores estaciones se comparan en su periodo común, con un ciclo anual normalizado para poder contrastar ríos de distinto tamaño.
 6. **Máximos anuales y periodo de retorno empírico** (Weibull) de la estación del análisis detallado.
